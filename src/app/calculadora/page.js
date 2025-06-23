@@ -4,7 +4,7 @@ import styles from "./page.module.css"
 export default function Calculadora () {
 
     // let resultado = '1000';
-    const [resultado, setResultado] = useState('0');
+    const [resultado, setResultado] = useState('00');
     const [primeiroOperando, setPrimeiroOperando] = useState(null);
     const [operador, setOperador] = useState(null);
     const [esperandoSegundoOperando, setEsperandoSegundoOperando] = useState(false);
@@ -75,41 +75,41 @@ export default function Calculadora () {
 
     return (
     <div className={styles.calculadora}>
-      <div className='visor'>
-        <p className='numero'>{resultado}</p>
+      <div className={styles.visor}>
+        <p className={styles.numero}>{resultado}</p>
       </div>
-      <div className='teclado'>
+      <div className={styles.teclado}>
         {/* Fila 1: 7, 8, 9, / */}
-        <div className='fila'>
-          <button className='botao' onClick={() => handleNumberClick(7)}>7</button>
-          <button className='botao' onClick={() => handleNumberClick(8)}>8</button>
-          <button className='botao' onClick={() => handleNumberClick(9)}>9</button>
-          <button className='botao' onClick={() => handleOperatorClick('/')}>/</button>
+        <div className={styles.fila}>
+          <button className={styles.botao} onClick={() => handleNumberClick(7)}>7</button>
+          <button className={styles.botao} onClick={() => handleNumberClick(8)}>8</button>
+          <button className={styles.botao} onClick={() => handleNumberClick(9)}>9</button>
+          <button className={styles.botao} onClick={() => handleOperatorClick('/')}>/</button>
         </div>
         {/* Fila 2: 4, 5, 6, * */}
-        <div className='fila'>
-          <button className='botao' onClick={() => handleNumberClick(4)}>4</button>
-          <button className='botao' onClick={() => handleNumberClick(5)}>5</button>
-          <button className='botao' onClick={() => handleNumberClick(6)}>6</button>
-          <button className='botao' onClick={() => handleOperatorClick('*')}>*</button>
+        <div className={styles.fila}>
+          <button className={styles.botao} onClick={() => handleNumberClick(4)}>4</button>
+          <button className={styles.botao} onClick={() => handleNumberClick(5)}>5</button>
+          <button className={styles.botao} onClick={() => handleNumberClick(6)}>6</button>
+          <button className={styles.botao} onClick={() => handleOperatorClick('*')}>x</button>
         </div>
         {/* Fila 3: 1, 2, 3, - */}
-        <div className='fila'>
-          <button className='botao' onClick={() => handleNumberClick(1)}>1</button>
-          <button className='botao' onClick={() => handleNumberClick(2)}>2</button>
-          <button className='botao' onClick={() => handleNumberClick(3)}>3</button>
-          <button className='botao' onClick={() => handleOperatorClick('-')}>-</button>
+        <div className={styles.fila}>
+          <button className={styles.botao} onClick={() => handleNumberClick(1)}>1</button>
+          <button className={styles.botao} onClick={() => handleNumberClick(2)}>2</button>
+          <button className={styles.botao} onClick={() => handleNumberClick(3)}>3</button>
+          <button className={styles.botao} onClick={() => handleOperatorClick('-')}>-</button>
         </div>
         {/* Fila 4: 0, ., =, + */}
-        <div className='fila'>
-          <button className='botao' onClick={() => handleNumberClick(0)}>0</button>
-          <button className='botao' onClick={handleDecimalClick}>.</button>
-          <button className='botao' onClick={handleEqualsClick}>=</button>
-          <button className='botao' onClick={() => handleOperatorClick('+')}>+</button>
+        <div className={styles.fila}>
+          <button className={styles.botao} onClick={() => handleNumberClick(0)}>0</button>
+          <button className={styles.botao} onClick={handleDecimalClick}>.</button>
+          <button className={styles.botao} onClick={handleEqualsClick}>=</button>
+          <button className={styles.botao} onClick={() => handleOperatorClick('+')}>+</button>
         </div>
         {/* Adicione um botão para limpar (Clear) */}
-        <div className='fila'>
-          <button className='botao clear' onClick={handleClearClick}>C</button>
+        <div className={styles.fila}>
+          <button className={styles.clear} onClick={handleClearClick}>C</button>
         </div>
       </div>
     </div>
