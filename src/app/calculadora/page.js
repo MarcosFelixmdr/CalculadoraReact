@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import styles from "./page.module.css"
 export default function Calculadora () {
 
     // let resultado = '1000';
@@ -73,7 +74,7 @@ export default function Calculadora () {
   }
 
     return (
-    <div className='calculadora'>
+    <div className={styles.calculadora}>
       <div className='visor'>
         <p className='numero'>{resultado}</p>
       </div>

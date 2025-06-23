@@ -1,6 +1,5 @@
-/* calculadora.module.css */
 .calculadora {
-  border: 2px solid #333;
+  border: 2px solid #a70808;
   border-radius: 10px;
   padding: 20px;
   background-color: #555;
@@ -8,6 +7,9 @@
   margin: 50px auto;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.6);
   display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-items: center;
   flex-direction: column;
   gap: 15px;
 }
@@ -20,13 +22,15 @@
   font-size: 3em;
   text-align: right;
   font-family: monospace;
-  color: #0f0; /* Cor do texto do visor */
   min-height: 1.5em;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.visor p {
+  color: #0f0; /* Cor do texto do visor */
 }
 
 .numero {
