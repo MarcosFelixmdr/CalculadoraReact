@@ -75,6 +75,8 @@ export default function Calculadora () {
 
     return (
     <div className={styles.calculadora}>
+      <div className={styles.visor2}>
+      </div>
       <div className={styles.visor}>
         <p className={styles.numero}>{resultado}</p>
       </div>

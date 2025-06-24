@@ -3,26 +3,37 @@
   border-radius: 15px;
   padding: 20px;
   background-color: #f5bb3c;
-  width: 90px;
+  width: 140px;
   margin: 50px auto;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-items: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
+}
+
+.visor2{
+  margin-top: none;
+  background-color: gray;
+  width: 70px;
+  height: 22px;
+  margin-left: 45px;
+  border-radius: 3px;
+  border: 2px solid #592c08;
 }
 
 .visor {
   background-color: #c5f6fe;
-  border: 2px solid #8dd1f5;
-  width: 160%;
+  border: 2px solid #592c08;
+  border-radius: 3px;
+  width: 120%;
 }
 
 .numero{
   color: #767376;
   display: flex;
-  margin-left: 45px;
+  margin-left: 85px;
 }
 
 .clear {
@@ -31,7 +42,7 @@
   border-radius: 3px;
   color: #3e2517;
   margin-left: 1px;
-  width: 74px;
+  width: 114px;
   height: 18px;
 }
 
@@ -43,7 +54,8 @@
 .botao{
   cursor: pointer;
   margin: 1px;
-  width: 17px;
+  width: 27px;
+  height: 18px;
   color: #3a2518;
   background-color: #f6dea4;
   border: 1.5px solid #5c3313;
